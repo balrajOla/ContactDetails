@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90083EB1B45AC5482997EB29 /* libPods-iOSContactDetails.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089ADA3A34BCFA22B707A3A1 /* libPods-iOSContactDetails.a */; };
 		A2989AA722EB17A10069EFF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AA622EB17A10069EFF0 /* AppDelegate.swift */; };
 		A2989AAE22EB17A70069EFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2989AAD22EB17A70069EFF0 /* Assets.xcassets */; };
 		A2989ABA22EB17FE0069EFF0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */; };
 		A2989ABB22EB17FE0069EFF0 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2989AB922EB17FE0069EFF0 /* HomeScreenViewController.xib */; };
+		A2989ABD22EB191D0069EFF0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A2989ABC22EB191D0069EFF0 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		089ADA3A34BCFA22B707A3A1 /* libPods-iOSContactDetails.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSContactDetails.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C56F0E04B0F444EA5311CD /* Pods-iOSContactDetails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.release.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.release.xcconfig"; sourceTree = "<group>"; };
 		A2989AA322EB17A10069EFF0 /* iOSContactDetails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSContactDetails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2989AA622EB17A10069EFF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2989AAD22EB17A70069EFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2989AB222EB17A70069EFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		A2989AB922EB17FE0069EFF0 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		A2989ABC22EB191D0069EFF0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90083EB1B45AC5482997EB29 /* libPods-iOSContactDetails.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31014BAB19057BFC61666060 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */,
+				84C56F0E04B0F444EA5311CD /* Pods-iOSContactDetails.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		8C6758EEBF8AFDA16533430D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089ADA3A34BCFA22B707A3A1 /* libPods-iOSContactDetails.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2989A9A22EB17A00069EFF0 = {
 			isa = PBXGroup;
 			children = (
+				A2989ABC22EB191D0069EFF0 /* Podfile */,
 				A2989AA522EB17A10069EFF0 /* iOSContactDetails */,
 				A2989AA422EB17A10069EFF0 /* Products */,
+				31014BAB19057BFC61666060 /* Pods */,
+				8C6758EEBF8AFDA16533430D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2989AB522EB17A70069EFF0 /* Build configuration list for PBXNativeTarget "iOSContactDetails" */;
 			buildPhases = (
+				CB20709110A73C8148690406 /* [CP] Check Pods Manifest.lock */,
 				A2989A9F22EB17A00069EFF0 /* Sources */,
 				A2989AA022EB17A00069EFF0 /* Frameworks */,
 				A2989AA122EB17A00069EFF0 /* Resources */,
@@ -119,12 +148,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2989ABD22EB191D0069EFF0 /* Podfile in Resources */,
 				A2989ABB22EB17FE0069EFF0 /* HomeScreenViewController.xib in Resources */,
 				A2989AAE22EB17A70069EFF0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB20709110A73C8148690406 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSContactDetails-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A2989A9F22EB17A00069EFF0 /* Sources */ = {
@@ -257,6 +312,7 @@
 		};
 		A2989AB622EB17A70069EFF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,6 +331,7 @@
 		};
 		A2989AB722EB17A70069EFF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C56F0E04B0F444EA5311CD /* Pods-iOSContactDetails.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
