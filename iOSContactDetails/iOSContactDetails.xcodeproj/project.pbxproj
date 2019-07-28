@@ -30,7 +30,7 @@
 		A2989AE122EE0CFE0069EFF0 /* ContactDetailUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE022EE0CFE0069EFF0 /* ContactDetailUsecase.swift */; };
 		A2989AE422EE17F10069EFF0 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE322EE17F10069EFF0 /* ContactListViewModel.swift */; };
 		A2989AE622EE184E0069EFF0 /* ContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE522EE184E0069EFF0 /* ContactDetailsViewModel.swift */; };
-		A2989AE922EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE822EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift */; };
+		A2989AE922EE20620069EFF0 /* ContactListViewModel+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE822EE20620069EFF0 /* ContactListViewModel+TableView.swift */; };
 		A2989AEB22EE23C80069EFF0 /* ContactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AEA22EE23C80069EFF0 /* ContactCellViewModel.swift */; };
 		A2989AED22EE26200069EFF0 /* Collection+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AEC22EE26200069EFF0 /* Collection+Subscript.swift */; };
 /* End PBXBuildFile section */
@@ -62,7 +62,7 @@
 		A2989AE022EE0CFE0069EFF0 /* ContactDetailUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailUsecase.swift; sourceTree = "<group>"; };
 		A2989AE322EE17F10069EFF0 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
 		A2989AE522EE184E0069EFF0 /* ContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewModel.swift; sourceTree = "<group>"; };
-		A2989AE822EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailsViewModel+TableView.swift"; sourceTree = "<group>"; };
+		A2989AE822EE20620069EFF0 /* ContactListViewModel+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactListViewModel+TableView.swift"; sourceTree = "<group>"; };
 		A2989AEA22EE23C80069EFF0 /* ContactCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellViewModel.swift; sourceTree = "<group>"; };
 		A2989AEC22EE26200069EFF0 /* Collection+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Subscript.swift"; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 		A2989AE722EE20430069EFF0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A2989AE822EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift */,
+				A2989AE822EE20620069EFF0 /* ContactListViewModel+TableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 				A2989ADD22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift in Sources */,
 				A2989ACA22EC88130069EFF0 /* ContactInfoRequest.swift in Sources */,
 				A2989AED22EE26200069EFF0 /* Collection+Subscript.swift in Sources */,
-				A2989AE922EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift in Sources */,
+				A2989AE922EE20620069EFF0 /* ContactListViewModel+TableView.swift in Sources */,
 				A2989ACF22EC9E540069EFF0 /* ServiceType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

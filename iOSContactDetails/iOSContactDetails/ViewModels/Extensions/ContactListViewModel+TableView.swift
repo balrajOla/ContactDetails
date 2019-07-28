@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension ContactDetailsViewModel {
+extension ContactListViewModel {
     func getTotalContactsCount() -> Int {
         return self.contacts.map { res -> Int in
             switch res {

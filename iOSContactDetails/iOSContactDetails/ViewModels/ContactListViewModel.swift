@@ -9,6 +9,22 @@
 import Foundation
 import PromiseKit
 
+enum ContactListViewModelError: Error {
+    case noDataAvailable
+    case unknown
+}
+
 class ContactListViewModel {
+    let usecase: ContactsUsecaseProtocol
+    var contacts: Result<Contacts>?
     
+    init(usecase: ContactsUsecaseProtocol) {
+        self.usecase = usecase
+    }
+    
+    func loadContacts() -> Promise<Bool> {
+        return usecase.getContacts()
+            .tap {[weak self] result -> Void in self?.contacts = result  }
+            .map { _ in return true }
+    }
 }
