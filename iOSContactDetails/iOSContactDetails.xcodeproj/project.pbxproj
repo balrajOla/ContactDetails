@@ -24,6 +24,7 @@
 		A2989AD322EC9FFC0069EFF0 /* ContactsInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD222EC9FFC0069EFF0 /* ContactsInfoResponse.swift */; };
 		A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD422ED7AF10069EFF0 /* Operators.swift */; };
 		A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD622ED7BFB0069EFF0 /* DecodeType.swift */; };
+		A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		A2989AD222EC9FFC0069EFF0 /* ContactsInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsInfoResponse.swift; sourceTree = "<group>"; };
 		A2989AD422ED7AF10069EFF0 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		A2989AD622ED7BFB0069EFF0 /* DecodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeType.swift; sourceTree = "<group>"; };
+		A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 		A2989AC822EC87FC0069EFF0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A2989AD822ED86D90069EFF0 /* Domain */,
 				A2989AC922EC88130069EFF0 /* ContactInfoRequest.swift */,
 				A2989AD022EC9F020069EFF0 /* ContactInfoTypes.swift */,
 				A2989AD222EC9FFC0069EFF0 /* ContactsInfoResponse.swift */,
@@ -152,6 +155,14 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A2989AD822ED86D90069EFF0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				A2989AC022EB36B10069EFF0 /* HttClient.swift in Sources */,
 				A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */,
 				A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */,
+				A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */,
 				A2989ACD22EC8FC00069EFF0 /* Encoder+Dictionary.swift in Sources */,
 				A2989AD322EC9FFC0069EFF0 /* ContactsInfoResponse.swift in Sources */,
 				A2989AC722EB3FCC0069EFF0 /* ServerConfig.swift in Sources */,
