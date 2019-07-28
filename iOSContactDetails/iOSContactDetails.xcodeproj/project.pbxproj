@@ -26,6 +26,7 @@
 		A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD622ED7BFB0069EFF0 /* DecodeType.swift */; };
 		A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */; };
 		A2989ADD22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */; };
+		A2989ADF22EE05060069EFF0 /* ContactsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989ADE22EE05060069EFF0 /* ContactsUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		A2989AD622ED7BFB0069EFF0 /* DecodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeType.swift; sourceTree = "<group>"; };
 		A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
 		A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsCRUDUsecase.swift; sourceTree = "<group>"; };
+		A2989ADE22EE05060069EFF0 /* ContactsUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUsecase.swift; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */,
+				A2989ADE22EE05060069EFF0 /* ContactsUsecase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */,
 				A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */,
 				A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */,
+				A2989ADF22EE05060069EFF0 /* ContactsUsecase.swift in Sources */,
 				A2989ACD22EC8FC00069EFF0 /* Encoder+Dictionary.swift in Sources */,
 				A2989AD322EC9FFC0069EFF0 /* ContactsInfoResponse.swift in Sources */,
 				A2989AC722EB3FCC0069EFF0 /* ServerConfig.swift in Sources */,
