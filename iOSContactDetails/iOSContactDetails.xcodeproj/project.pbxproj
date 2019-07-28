@@ -120,6 +120,7 @@
 		A2989AA522EB17A10069EFF0 /* iOSContactDetails */ = {
 			isa = PBXGroup;
 			children = (
+				A2989AEE22EE2B610069EFF0 /* ViewControllers */,
 				A2989AE222EE17D20069EFF0 /* ViewModels */,
 				A2989ADB22EDA3C30069EFF0 /* Usecases */,
 				A2989AC822EC87FC0069EFF0 /* Models */,
@@ -128,8 +129,6 @@
 				A2989AA622EB17A10069EFF0 /* AppDelegate.swift */,
 				A2989AAD22EB17A70069EFF0 /* Assets.xcassets */,
 				A2989AB222EB17A70069EFF0 /* Info.plist */,
-				A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */,
-				A2989AB922EB17FE0069EFF0 /* HomeScreenViewController.xib */,
 			);
 			path = iOSContactDetails;
 			sourceTree = "<group>";
@@ -203,6 +202,15 @@
 				A2989AE822EE20620069EFF0 /* ContactListViewModel+TableView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A2989AEE22EE2B610069EFF0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */,
+				A2989AB922EB17FE0069EFF0 /* HomeScreenViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
