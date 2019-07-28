@@ -33,6 +33,11 @@
 		A2989AE922EE20620069EFF0 /* ContactListViewModel+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE822EE20620069EFF0 /* ContactListViewModel+TableView.swift */; };
 		A2989AEB22EE23C80069EFF0 /* ContactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AEA22EE23C80069EFF0 /* ContactCellViewModel.swift */; };
 		A2989AED22EE26200069EFF0 /* Collection+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AEC22EE26200069EFF0 /* Collection+Subscript.swift */; };
+		A2989AF022EE2C080069EFF0 /* PulseAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AEF22EE2C080069EFF0 /* PulseAnimationView.swift */; };
+		A2989AF222EE2C1C0069EFF0 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AF122EE2C1C0069EFF0 /* Loader.swift */; };
+		A2989AF622EE2D550069EFF0 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AF422EE2D550069EFF0 /* ContactListTableViewCell.swift */; };
+		A2989AF722EE2D550069EFF0 /* ContactListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2989AF522EE2D550069EFF0 /* ContactListTableViewCell.xib */; };
+		A2989AF922EE2D870069EFF0 /* UITableView+RegisterCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AF822EE2D870069EFF0 /* UITableView+RegisterCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +70,11 @@
 		A2989AE822EE20620069EFF0 /* ContactListViewModel+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactListViewModel+TableView.swift"; sourceTree = "<group>"; };
 		A2989AEA22EE23C80069EFF0 /* ContactCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellViewModel.swift; sourceTree = "<group>"; };
 		A2989AEC22EE26200069EFF0 /* Collection+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Subscript.swift"; sourceTree = "<group>"; };
+		A2989AEF22EE2C080069EFF0 /* PulseAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimationView.swift; sourceTree = "<group>"; };
+		A2989AF122EE2C1C0069EFF0 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		A2989AF422EE2D550069EFF0 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		A2989AF522EE2D550069EFF0 /* ContactListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListTableViewCell.xib; sourceTree = "<group>"; };
+		A2989AF822EE2D870069EFF0 /* UITableView+RegisterCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterCells.swift"; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +162,9 @@
 				A2989ACC22EC8FC00069EFF0 /* Encoder+Dictionary.swift */,
 				A2989AD422ED7AF10069EFF0 /* Operators.swift */,
 				A2989AEC22EE26200069EFF0 /* Collection+Subscript.swift */,
+				A2989AEF22EE2C080069EFF0 /* PulseAnimationView.swift */,
+				A2989AF122EE2C1C0069EFF0 /* Loader.swift */,
+				A2989AF822EE2D870069EFF0 /* UITableView+RegisterCells.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -207,10 +220,20 @@
 		A2989AEE22EE2B610069EFF0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A2989AF322EE2D270069EFF0 /* Cells */,
 				A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */,
 				A2989AB922EB17FE0069EFF0 /* HomeScreenViewController.xib */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A2989AF322EE2D270069EFF0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A2989AF422EE2D550069EFF0 /* ContactListTableViewCell.swift */,
+				A2989AF522EE2D550069EFF0 /* ContactListTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2989AF722EE2D550069EFF0 /* ContactListTableViewCell.xib in Resources */,
 				A2989ABD22EB191D0069EFF0 /* Podfile in Resources */,
 				A2989ABB22EB17FE0069EFF0 /* HomeScreenViewController.xib in Resources */,
 				A2989AAE22EB17A70069EFF0 /* Assets.xcassets in Resources */,
@@ -311,18 +335,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2989AC522EB3FAD0069EFF0 /* Network.swift in Sources */,
+				A2989AF622EE2D550069EFF0 /* ContactListTableViewCell.swift in Sources */,
 				A2989AA722EB17A10069EFF0 /* AppDelegate.swift in Sources */,
 				A2989AD122EC9F020069EFF0 /* ContactInfoTypes.swift in Sources */,
 				A2989AC222EB36E10069EFF0 /* Route.swift in Sources */,
+				A2989AF022EE2C080069EFF0 /* PulseAnimationView.swift in Sources */,
 				A2989AC022EB36B10069EFF0 /* HttClient.swift in Sources */,
 				A2989AE122EE0CFE0069EFF0 /* ContactDetailUsecase.swift in Sources */,
 				A2989AEB22EE23C80069EFF0 /* ContactCellViewModel.swift in Sources */,
 				A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */,
+				A2989AF922EE2D870069EFF0 /* UITableView+RegisterCells.swift in Sources */,
 				A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */,
 				A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */,
 				A2989AE422EE17F10069EFF0 /* ContactListViewModel.swift in Sources */,
 				A2989ADF22EE05060069EFF0 /* ContactsUsecase.swift in Sources */,
 				A2989ACD22EC8FC00069EFF0 /* Encoder+Dictionary.swift in Sources */,
+				A2989AF222EE2C1C0069EFF0 /* Loader.swift in Sources */,
 				A2989AD322EC9FFC0069EFF0 /* ContactsInfoResponse.swift in Sources */,
 				A2989AE622EE184E0069EFF0 /* ContactDetailsViewModel.swift in Sources */,
 				A2989AC722EB3FCC0069EFF0 /* ServerConfig.swift in Sources */,

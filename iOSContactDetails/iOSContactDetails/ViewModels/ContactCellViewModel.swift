@@ -14,4 +14,16 @@ class ContactCellViewModel {
     init(info: SavedContactDetails) {
         self.contactInfo = info
     }
+    
+    func getName() -> String {
+        return "\(contactInfo.details.name.firstName) \(contactInfo.details.name.lastName)"
+    }
+    
+    func profilePic() -> URL? {
+        return contactInfo.details.name.profilePic.flatMap { URL(string: $0) }
+    }
+    
+    func isFav() -> Bool {
+        return contactInfo.details.isFav
+    }
 }
