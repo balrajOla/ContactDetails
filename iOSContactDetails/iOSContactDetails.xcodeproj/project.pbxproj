@@ -19,6 +19,11 @@
 		A2989AC722EB3FCC0069EFF0 /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AC622EB3FCC0069EFF0 /* ServerConfig.swift */; };
 		A2989ACA22EC88130069EFF0 /* ContactInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AC922EC88130069EFF0 /* ContactInfoRequest.swift */; };
 		A2989ACD22EC8FC00069EFF0 /* Encoder+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989ACC22EC8FC00069EFF0 /* Encoder+Dictionary.swift */; };
+		A2989ACF22EC9E540069EFF0 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989ACE22EC9E540069EFF0 /* ServiceType.swift */; };
+		A2989AD122EC9F020069EFF0 /* ContactInfoTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD022EC9F020069EFF0 /* ContactInfoTypes.swift */; };
+		A2989AD322EC9FFC0069EFF0 /* ContactsInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD222EC9FFC0069EFF0 /* ContactsInfoResponse.swift */; };
+		A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD422ED7AF10069EFF0 /* Operators.swift */; };
+		A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD622ED7BFB0069EFF0 /* DecodeType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		A2989AC622EB3FCC0069EFF0 /* ServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
 		A2989AC922EC88130069EFF0 /* ContactInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoRequest.swift; sourceTree = "<group>"; };
 		A2989ACC22EC8FC00069EFF0 /* Encoder+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encoder+Dictionary.swift"; sourceTree = "<group>"; };
+		A2989ACE22EC9E540069EFF0 /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
+		A2989AD022EC9F020069EFF0 /* ContactInfoTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoTypes.swift; sourceTree = "<group>"; };
+		A2989AD222EC9FFC0069EFF0 /* ContactsInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsInfoResponse.swift; sourceTree = "<group>"; };
+		A2989AD422ED7AF10069EFF0 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		A2989AD622ED7BFB0069EFF0 /* DecodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeType.swift; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +121,8 @@
 				A2989ABF22EB36B10069EFF0 /* HttClient.swift */,
 				A2989AC122EB36E10069EFF0 /* Route.swift */,
 				A2989AC622EB3FCC0069EFF0 /* ServerConfig.swift */,
+				A2989ACE22EC9E540069EFF0 /* ServiceType.swift */,
+				A2989AD622ED7BFB0069EFF0 /* DecodeType.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -120,6 +132,7 @@
 			children = (
 				A2989AC422EB3FAD0069EFF0 /* Network.swift */,
 				A2989ACC22EC8FC00069EFF0 /* Encoder+Dictionary.swift */,
+				A2989AD422ED7AF10069EFF0 /* Operators.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -128,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				A2989AC922EC88130069EFF0 /* ContactInfoRequest.swift */,
+				A2989AD022EC9F020069EFF0 /* ContactInfoTypes.swift */,
+				A2989AD222EC9FFC0069EFF0 /* ContactsInfoResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,12 +253,17 @@
 			files = (
 				A2989AC522EB3FAD0069EFF0 /* Network.swift in Sources */,
 				A2989AA722EB17A10069EFF0 /* AppDelegate.swift in Sources */,
+				A2989AD122EC9F020069EFF0 /* ContactInfoTypes.swift in Sources */,
 				A2989AC222EB36E10069EFF0 /* Route.swift in Sources */,
 				A2989AC022EB36B10069EFF0 /* HttClient.swift in Sources */,
+				A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */,
+				A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */,
 				A2989ACD22EC8FC00069EFF0 /* Encoder+Dictionary.swift in Sources */,
+				A2989AD322EC9FFC0069EFF0 /* ContactsInfoResponse.swift in Sources */,
 				A2989AC722EB3FCC0069EFF0 /* ServerConfig.swift in Sources */,
 				A2989ABA22EB17FE0069EFF0 /* HomeScreenViewController.swift in Sources */,
 				A2989ACA22EC88130069EFF0 /* ContactInfoRequest.swift in Sources */,
+				A2989ACF22EC9E540069EFF0 /* ServiceType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
