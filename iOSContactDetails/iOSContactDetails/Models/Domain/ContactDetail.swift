@@ -9,11 +9,15 @@
 import Foundation
 
 struct Contacts {
-    let info: [ContactDetail]
+    let info: [SavedContactDetails]
 }
 
-struct ContactDetail {
+struct SavedContactDetails {
     let id: String
+    let details: ContactDetails
+}
+
+struct ContactDetails {
     let name: PersonnelName
     let contactInfo: ContactInfo?
 }

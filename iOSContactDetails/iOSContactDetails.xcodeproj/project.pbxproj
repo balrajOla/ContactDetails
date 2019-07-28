@@ -104,7 +104,6 @@
 		A2989AA522EB17A10069EFF0 /* iOSContactDetails */ = {
 			isa = PBXGroup;
 			children = (
-				A2989ACB22EC8F910069EFF0 /* New Group */,
 				A2989AC822EC87FC0069EFF0 /* Models */,
 				A2989AC322EB3CA10069EFF0 /* Utilities */,
 				A2989ABE22EB366F0069EFF0 /* Services */,
@@ -148,13 +147,6 @@
 				A2989AD222EC9FFC0069EFF0 /* ContactsInfoResponse.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		A2989ACB22EC8F910069EFF0 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		A2989AD822ED86D90069EFF0 /* Domain */ = {
