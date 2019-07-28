@@ -27,6 +27,7 @@
 		A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */; };
 		A2989ADD22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */; };
 		A2989ADF22EE05060069EFF0 /* ContactsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989ADE22EE05060069EFF0 /* ContactsUsecase.swift */; };
+		A2989AE122EE0CFE0069EFF0 /* ContactDetailUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE022EE0CFE0069EFF0 /* ContactDetailUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
 		A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsCRUDUsecase.swift; sourceTree = "<group>"; };
 		A2989ADE22EE05060069EFF0 /* ContactsUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUsecase.swift; sourceTree = "<group>"; };
+		A2989AE022EE0CFE0069EFF0 /* ContactDetailUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailUsecase.swift; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 			children = (
 				A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */,
 				A2989ADE22EE05060069EFF0 /* ContactsUsecase.swift */,
+				A2989AE022EE0CFE0069EFF0 /* ContactDetailUsecase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				A2989AD122EC9F020069EFF0 /* ContactInfoTypes.swift in Sources */,
 				A2989AC222EB36E10069EFF0 /* Route.swift in Sources */,
 				A2989AC022EB36B10069EFF0 /* HttClient.swift in Sources */,
+				A2989AE122EE0CFE0069EFF0 /* ContactDetailUsecase.swift in Sources */,
 				A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */,
 				A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */,
 				A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */,
