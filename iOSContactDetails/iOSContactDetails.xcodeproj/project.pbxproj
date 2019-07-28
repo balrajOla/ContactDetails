@@ -25,6 +25,7 @@
 		A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD422ED7AF10069EFF0 /* Operators.swift */; };
 		A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD622ED7BFB0069EFF0 /* DecodeType.swift */; };
 		A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */; };
+		A2989ADD22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		A2989AD422ED7AF10069EFF0 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		A2989AD622ED7BFB0069EFF0 /* DecodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeType.swift; sourceTree = "<group>"; };
 		A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
+		A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsCRUDUsecase.swift; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		A2989AA522EB17A10069EFF0 /* iOSContactDetails */ = {
 			isa = PBXGroup;
 			children = (
+				A2989ADB22EDA3C30069EFF0 /* Usecases */,
 				A2989AC822EC87FC0069EFF0 /* Models */,
 				A2989AC322EB3CA10069EFF0 /* Utilities */,
 				A2989ABE22EB366F0069EFF0 /* Services */,
@@ -155,6 +158,14 @@
 				A2989AD922ED86EE0069EFF0 /* ContactDetail.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		A2989ADB22EDA3C30069EFF0 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */,
+			);
+			path = Usecases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				A2989AD322EC9FFC0069EFF0 /* ContactsInfoResponse.swift in Sources */,
 				A2989AC722EB3FCC0069EFF0 /* ServerConfig.swift in Sources */,
 				A2989ABA22EB17FE0069EFF0 /* HomeScreenViewController.swift in Sources */,
+				A2989ADD22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift in Sources */,
 				A2989ACA22EC88130069EFF0 /* ContactInfoRequest.swift in Sources */,
 				A2989ACF22EC9E540069EFF0 /* ServiceType.swift in Sources */,
 			);

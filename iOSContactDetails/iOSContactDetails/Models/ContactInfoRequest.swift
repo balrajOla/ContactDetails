@@ -11,8 +11,8 @@ import Foundation
 struct ContactInfoRequest: Codable {
     let firstName: String
     let lastName: String
-    let email: String
-    let phoneNumber: String
+    let email: String?
+    let phoneNumber: String?
     let favorite: Bool
     private enum CodingKeys: String, CodingKey {
         case firstName = "first_name"

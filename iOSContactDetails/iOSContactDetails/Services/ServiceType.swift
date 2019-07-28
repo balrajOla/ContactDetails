@@ -10,7 +10,7 @@ import Foundation
 import PromiseKit
 
 protocol ServiceType {
-    func getContactDetails(forType type: ContactInfoType) -> Promise<ContactsResponse>
+    func getContactDetails(forType type: ContactInfoType) -> Promise<[ContactInfoResponse]>
     func addContactDetail(forInfo info: ContactInfoRequest) -> Promise<ContactInfoResponse>
     func editContactDetail(forID id: String) -> (_ info: ContactInfoRequest) -> Promise<ContactInfoResponse>
     func deleteContactDetail(forId id: String) -> Promise<Bool>
@@ -26,7 +26,7 @@ struct Service: ServiceType {
         self.decoder = decode
     }
     
-    func getContactDetails(forType type: ContactInfoType) -> Promise<ContactsResponse> {
+    func getContactDetails(forType type: ContactInfoType) -> Promise<[ContactInfoResponse]> {
         return type
                 |> getRoute(forType:)
                    >>> request()
