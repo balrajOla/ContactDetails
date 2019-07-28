@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class ContactListTableViewCell: UITableViewCell {
     var viewModel: ContactCellViewModel?
@@ -34,6 +35,11 @@ class ContactListTableViewCell: UITableViewCell {
     private func setupDataToView() {
         self.name.text = self.viewModel?.getName()
         self.favIcon.isHidden = !(self.viewModel?.isFav() ?? false)
-        self.profilePic.image = self.viewModel?.profilePic().flatMap { url -> UIImage? in (try? Data.init(contentsOf:url)).flatMap { UIImage(data: $0) } }
+        
+        if let imageUrl = viewModel.flatMap({ $0.profilePic() }) {
+            self.profilePic.af_setImage(withURL: imageUrl, placeholderImage: UIImage(imageLiteralResourceName: "profileDefaultPic"))
+        } else {
+            self.profilePic.image = UIImage(imageLiteralResourceName: "profileDefaultPic")
+        }
     }
 }

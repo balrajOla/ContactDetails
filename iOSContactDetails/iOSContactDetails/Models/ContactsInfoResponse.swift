@@ -9,7 +9,7 @@
 import Foundation
 
 struct ContactInfoResponse: Codable {
-    let id: String
+    let id: Int
     let firstName: String
     let lastName: String
     let email: String?

@@ -13,7 +13,7 @@ struct Contacts {
 }
 
 struct SavedContactDetails {
-    let id: String
+    let id: Int
     let details: ContactDetails
 }
 

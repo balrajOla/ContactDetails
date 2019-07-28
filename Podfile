@@ -9,6 +9,7 @@ project 'iOSContactDetails.xcodeproj'
 
 def base_pod
   pod 'PromiseKit'
+  pod 'AlamofireImage'
 end
 
 target 'iOSContactDetails' do

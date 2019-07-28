@@ -38,6 +38,7 @@
 		A2989AF622EE2D550069EFF0 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AF422EE2D550069EFF0 /* ContactListTableViewCell.swift */; };
 		A2989AF722EE2D550069EFF0 /* ContactListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2989AF522EE2D550069EFF0 /* ContactListTableViewCell.xib */; };
 		A2989AF922EE2D870069EFF0 /* UITableView+RegisterCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AF822EE2D870069EFF0 /* UITableView+RegisterCells.swift */; };
+		A2989AFC22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AFB22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		A2989AF422EE2D550069EFF0 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
 		A2989AF522EE2D550069EFF0 /* ContactListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListTableViewCell.xib; sourceTree = "<group>"; };
 		A2989AF822EE2D870069EFF0 /* UITableView+RegisterCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterCells.swift"; sourceTree = "<group>"; };
+		A2989AFB22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreenViewController+TableView.swift"; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +222,7 @@
 		A2989AEE22EE2B610069EFF0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A2989AFA22EE39F20069EFF0 /* Extensions */,
 				A2989AF322EE2D270069EFF0 /* Cells */,
 				A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */,
 				A2989AB922EB17FE0069EFF0 /* HomeScreenViewController.xib */,
@@ -234,6 +237,14 @@
 				A2989AF522EE2D550069EFF0 /* ContactListTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		A2989AFA22EE39F20069EFF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2989AFB22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 				A2989AF622EE2D550069EFF0 /* ContactListTableViewCell.swift in Sources */,
 				A2989AA722EB17A10069EFF0 /* AppDelegate.swift in Sources */,
 				A2989AD122EC9F020069EFF0 /* ContactInfoTypes.swift in Sources */,
+				A2989AFC22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift in Sources */,
 				A2989AC222EB36E10069EFF0 /* Route.swift in Sources */,
 				A2989AF022EE2C080069EFF0 /* PulseAnimationView.swift in Sources */,
 				A2989AC022EB36B10069EFF0 /* HttClient.swift in Sources */,

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="iOSContactDetails" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="KRT-YT-NHX" id="6nE-CY-vFB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
