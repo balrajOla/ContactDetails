@@ -28,6 +28,11 @@
 		A2989ADD22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */; };
 		A2989ADF22EE05060069EFF0 /* ContactsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989ADE22EE05060069EFF0 /* ContactsUsecase.swift */; };
 		A2989AE122EE0CFE0069EFF0 /* ContactDetailUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE022EE0CFE0069EFF0 /* ContactDetailUsecase.swift */; };
+		A2989AE422EE17F10069EFF0 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE322EE17F10069EFF0 /* ContactListViewModel.swift */; };
+		A2989AE622EE184E0069EFF0 /* ContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE522EE184E0069EFF0 /* ContactDetailsViewModel.swift */; };
+		A2989AE922EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AE822EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift */; };
+		A2989AEB22EE23C80069EFF0 /* ContactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AEA22EE23C80069EFF0 /* ContactCellViewModel.swift */; };
+		A2989AED22EE26200069EFF0 /* Collection+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AEC22EE26200069EFF0 /* Collection+Subscript.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +60,11 @@
 		A2989ADC22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsCRUDUsecase.swift; sourceTree = "<group>"; };
 		A2989ADE22EE05060069EFF0 /* ContactsUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUsecase.swift; sourceTree = "<group>"; };
 		A2989AE022EE0CFE0069EFF0 /* ContactDetailUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailUsecase.swift; sourceTree = "<group>"; };
+		A2989AE322EE17F10069EFF0 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
+		A2989AE522EE184E0069EFF0 /* ContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewModel.swift; sourceTree = "<group>"; };
+		A2989AE822EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailsViewModel+TableView.swift"; sourceTree = "<group>"; };
+		A2989AEA22EE23C80069EFF0 /* ContactCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCellViewModel.swift; sourceTree = "<group>"; };
+		A2989AEC22EE26200069EFF0 /* Collection+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Subscript.swift"; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +120,7 @@
 		A2989AA522EB17A10069EFF0 /* iOSContactDetails */ = {
 			isa = PBXGroup;
 			children = (
+				A2989AE222EE17D20069EFF0 /* ViewModels */,
 				A2989ADB22EDA3C30069EFF0 /* Usecases */,
 				A2989AC822EC87FC0069EFF0 /* Models */,
 				A2989AC322EB3CA10069EFF0 /* Utilities */,
@@ -141,6 +152,7 @@
 				A2989AC422EB3FAD0069EFF0 /* Network.swift */,
 				A2989ACC22EC8FC00069EFF0 /* Encoder+Dictionary.swift */,
 				A2989AD422ED7AF10069EFF0 /* Operators.swift */,
+				A2989AEC22EE26200069EFF0 /* Collection+Subscript.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -172,6 +184,25 @@
 				A2989AE022EE0CFE0069EFF0 /* ContactDetailUsecase.swift */,
 			);
 			path = Usecases;
+			sourceTree = "<group>";
+		};
+		A2989AE222EE17D20069EFF0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A2989AE722EE20430069EFF0 /* Extensions */,
+				A2989AE322EE17F10069EFF0 /* ContactListViewModel.swift */,
+				A2989AE522EE184E0069EFF0 /* ContactDetailsViewModel.swift */,
+				A2989AEA22EE23C80069EFF0 /* ContactCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A2989AE722EE20430069EFF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2989AE822EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,16 +308,21 @@
 				A2989AC222EB36E10069EFF0 /* Route.swift in Sources */,
 				A2989AC022EB36B10069EFF0 /* HttClient.swift in Sources */,
 				A2989AE122EE0CFE0069EFF0 /* ContactDetailUsecase.swift in Sources */,
+				A2989AEB22EE23C80069EFF0 /* ContactCellViewModel.swift in Sources */,
 				A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */,
 				A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */,
 				A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */,
+				A2989AE422EE17F10069EFF0 /* ContactListViewModel.swift in Sources */,
 				A2989ADF22EE05060069EFF0 /* ContactsUsecase.swift in Sources */,
 				A2989ACD22EC8FC00069EFF0 /* Encoder+Dictionary.swift in Sources */,
 				A2989AD322EC9FFC0069EFF0 /* ContactsInfoResponse.swift in Sources */,
+				A2989AE622EE184E0069EFF0 /* ContactDetailsViewModel.swift in Sources */,
 				A2989AC722EB3FCC0069EFF0 /* ServerConfig.swift in Sources */,
 				A2989ABA22EB17FE0069EFF0 /* HomeScreenViewController.swift in Sources */,
 				A2989ADD22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift in Sources */,
 				A2989ACA22EC88130069EFF0 /* ContactInfoRequest.swift in Sources */,
+				A2989AED22EE26200069EFF0 /* Collection+Subscript.swift in Sources */,
+				A2989AE922EE20620069EFF0 /* ContactDetailsViewModel+TableView.swift in Sources */,
 				A2989ACF22EC9E540069EFF0 /* ServiceType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
