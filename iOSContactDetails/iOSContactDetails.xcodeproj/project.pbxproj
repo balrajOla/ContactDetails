@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		90083EB1B45AC5482997EB29 /* libPods-iOSContactDetails.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089ADA3A34BCFA22B707A3A1 /* libPods-iOSContactDetails.a */; };
+		A274460522EEF728003B12E6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460422EEF728003B12E6 /* GradientView.swift */; };
 		A2989AA722EB17A10069EFF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AA622EB17A10069EFF0 /* AppDelegate.swift */; };
 		A2989AAE22EB17A70069EFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2989AAD22EB17A70069EFF0 /* Assets.xcassets */; };
 		A2989ABA22EB17FE0069EFF0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		089ADA3A34BCFA22B707A3A1 /* libPods-iOSContactDetails.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSContactDetails.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C56F0E04B0F444EA5311CD /* Pods-iOSContactDetails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.release.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.release.xcconfig"; sourceTree = "<group>"; };
+		A274460422EEF728003B12E6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A2989AA322EB17A10069EFF0 /* iOSContactDetails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSContactDetails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2989AA622EB17A10069EFF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2989AAD22EB17A70069EFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				A2989AEF22EE2C080069EFF0 /* PulseAnimationView.swift */,
 				A2989AF122EE2C1C0069EFF0 /* Loader.swift */,
 				A2989AF822EE2D870069EFF0 /* UITableView+RegisterCells.swift */,
+				A274460422EEF728003B12E6 /* GradientView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				A2989ADD22EDA4170069EFF0 /* ContactDetailsCRUDUsecase.swift in Sources */,
 				A2989ACA22EC88130069EFF0 /* ContactInfoRequest.swift in Sources */,
 				A2989AED22EE26200069EFF0 /* Collection+Subscript.swift in Sources */,
+				A274460522EEF728003B12E6 /* GradientView.swift in Sources */,
 				A2989AE922EE20620069EFF0 /* ContactListViewModel+TableView.swift in Sources */,
 				A2989ACF22EC9E540069EFF0 /* ServiceType.swift in Sources */,
 			);
