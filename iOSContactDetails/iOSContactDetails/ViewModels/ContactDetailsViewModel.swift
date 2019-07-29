@@ -31,4 +31,20 @@ class ContactDetailsViewModel {
                 return true
             }) }
     }
+    
+    func getFullName() -> String {
+        return "\(contactDetails.details.name.firstName) \(contactDetails.details.name.lastName)"
+    }
+    
+    func getMobileNumber() -> String {
+        return contactDetails.details.contactInfo?.getPhoneNumber() ?? "NA"
+    }
+    
+    func getEmailID() -> String {
+        return contactDetails.details.contactInfo?.getEmailID() ?? "NA"
+    }
+    
+    func profilePic() -> URL? {
+        return contactDetails.details.name.profilePic.flatMap { URL(string: $0) }
+    }
 }

@@ -27,4 +27,17 @@ class ContactListViewModel {
             .tap {[weak self] result -> Void in self?.contacts = result  }
             .map { _ in return true }
     }
+    
+    func hasNoData() -> Bool {
+        guard let res = self.contacts else {
+            return true
+        }
+        
+        switch res {
+        case .rejected(_):
+            return true
+        default:
+            return false
+        }
+    }
 }

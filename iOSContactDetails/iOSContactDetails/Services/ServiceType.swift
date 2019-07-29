@@ -28,8 +28,7 @@ struct Service: ServiceType {
     
     func getContactDetails(forType type: ContactInfoType) -> Promise<[ContactInfoResponse]> {
         return type
-                |> getRoute(forType:)
-                   >>> request()
+                |> getRouteResponse(forType:)
     }
     
     func addContactDetail(forInfo info: ContactInfoRequest) -> Promise<ContactInfoResponse> {
@@ -57,12 +56,17 @@ struct Service: ServiceType {
                >>> decoder.decode(response:)
     }
     
-    private func getRoute(forType type: ContactInfoType) -> Route {
+    private func getRouteResponse(forType type: ContactInfoType) -> Promise<[ContactInfoResponse]> {
         switch type {
         case .contact(let id):
             return Route.getContactInfo(id)
+                |> request()
+                >>> { (value: Promise<ContactInfoResponse>) -> Promise<[ContactInfoResponse]> in
+                    value.map { [$0] }
+            }
         case .all:
             return Route.getContactInfo(nil)
+                |> request()
         }
     }
 }

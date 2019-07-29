@@ -24,7 +24,7 @@ class HomeScreenViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        Loader.show(blockingLoader: false)
+        if self.viewModel.hasNoData() { Loader.show(blockingLoader: false) }
         self.viewModel.loadContacts()
             .done(on: DispatchQueue.main) { _ in self.tableView.reloadData() }
             .catch { err in print(err.localizedDescription) }

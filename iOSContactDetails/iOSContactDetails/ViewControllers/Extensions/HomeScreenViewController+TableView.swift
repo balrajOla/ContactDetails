@@ -25,8 +25,20 @@ extension HomeScreenViewController: UITableViewDataSource {
     
     func setUpTableView() {
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         self.tableView.registerCells([ContactListTableViewCell.self], bundle: Bundle.main)
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 64
+    }
+}
+
+extension HomeScreenViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        indexPath.row
+            |> self.viewModel.getContactDetailsViewModel(forIndex:)
+            >>> { $0.map { $0
+                |> ContactDetailViewController.init(withViewModel:)
+                >>> {[weak self] (vc: ContactDetailViewController)  -> Void in
+                    self?.navigationController?.pushViewController(vc, animated: true) } } }
     }
 }
