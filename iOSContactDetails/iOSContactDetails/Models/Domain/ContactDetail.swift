@@ -37,9 +37,9 @@ enum ContactInfo {
     func getPhoneNumber() -> String? {
         switch self {
         case .phoneNumber(let phNo):
-            return phNo
+            return (phNo.count > 0 ? phNo : nil)
         case .both(let data):
-            return data.phoneNumber
+            return (data.phoneNumber.count > 0 ? data.phoneNumber : nil)
         default:
             return nil
         }
@@ -48,9 +48,9 @@ enum ContactInfo {
     func getEmailID() -> String? {
         switch self {
         case .emailID(let email):
-            return email
+            return (email.count > 0 ? email : nil)
         case .both(let data):
-            return data.emailID
+            return (data.emailID.count > 0 ? data.emailID: nil)
         default:
             return nil
         }

@@ -37,11 +37,11 @@ class ContactDetailsViewModel {
     }
     
     func getMobileNumber() -> String {
-        return contactDetails.details.contactInfo?.getPhoneNumber() ?? "NA"
+        return contactDetails.details.contactInfo?.getPhoneNumber() ?? "--"
     }
     
     func getEmailID() -> String {
-        return contactDetails.details.contactInfo?.getEmailID() ?? "NA"
+        return contactDetails.details.contactInfo?.getEmailID() ?? "--"
     }
     
     func profilePic() -> URL? {
