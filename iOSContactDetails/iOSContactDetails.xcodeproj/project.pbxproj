@@ -39,6 +39,8 @@
 		A2989AF722EE2D550069EFF0 /* ContactListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2989AF522EE2D550069EFF0 /* ContactListTableViewCell.xib */; };
 		A2989AF922EE2D870069EFF0 /* UITableView+RegisterCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AF822EE2D870069EFF0 /* UITableView+RegisterCells.swift */; };
 		A2989AFC22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AFB22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift */; };
+		A2989AFF22EE51900069EFF0 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AFD22EE51900069EFF0 /* ContactDetailViewController.swift */; };
+		A2989B0022EE51900069EFF0 /* ContactDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2989AFE22EE51900069EFF0 /* ContactDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		A2989AF522EE2D550069EFF0 /* ContactListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListTableViewCell.xib; sourceTree = "<group>"; };
 		A2989AF822EE2D870069EFF0 /* UITableView+RegisterCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterCells.swift"; sourceTree = "<group>"; };
 		A2989AFB22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreenViewController+TableView.swift"; sourceTree = "<group>"; };
+		A2989AFD22EE51900069EFF0 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		A2989AFE22EE51900069EFF0 /* ContactDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailViewController.xib; sourceTree = "<group>"; };
 		AADC5109082E96858210970D /* Pods-iOSContactDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.debug.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +230,8 @@
 				A2989AF322EE2D270069EFF0 /* Cells */,
 				A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */,
 				A2989AB922EB17FE0069EFF0 /* HomeScreenViewController.xib */,
+				A2989AFD22EE51900069EFF0 /* ContactDetailViewController.swift */,
+				A2989AFE22EE51900069EFF0 /* ContactDetailViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 				A2989AF722EE2D550069EFF0 /* ContactListTableViewCell.xib in Resources */,
 				A2989ABD22EB191D0069EFF0 /* Podfile in Resources */,
 				A2989ABB22EB17FE0069EFF0 /* HomeScreenViewController.xib in Resources */,
+				A2989B0022EE51900069EFF0 /* ContactDetailViewController.xib in Resources */,
 				A2989AAE22EB17A70069EFF0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +362,7 @@
 				A2989AC022EB36B10069EFF0 /* HttClient.swift in Sources */,
 				A2989AE122EE0CFE0069EFF0 /* ContactDetailUsecase.swift in Sources */,
 				A2989AEB22EE23C80069EFF0 /* ContactCellViewModel.swift in Sources */,
+				A2989AFF22EE51900069EFF0 /* ContactDetailViewController.swift in Sources */,
 				A2989AD522ED7AF10069EFF0 /* Operators.swift in Sources */,
 				A2989AF922EE2D870069EFF0 /* UITableView+RegisterCells.swift in Sources */,
 				A2989AD722ED7BFB0069EFF0 /* DecodeType.swift in Sources */,

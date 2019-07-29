@@ -30,4 +30,15 @@ extension ContactListViewModel {
             }
         }
     }
+    
+    func getContactDetailsViewModel(forIndex index: Int) -> ContactDetailsViewModel? {
+        return self.contacts.flatMap { res -> ContactDetailsViewModel? in
+            switch res {
+            case .fulfilled(let value):
+                return value.info[safe: index].map { ContactDetailsViewModel.init(contactDetails: $0, usecase: ContactDetailUsecase()) }
+            default:
+                return nil
+            }
+        }
+    }
 }
