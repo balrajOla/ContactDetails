@@ -17,7 +17,6 @@
                 <outlet property="mobileNumber" destination="Hkl-n3-nhN" id="S06-s2-M5F"/>
                 <outlet property="name" destination="VAf-mH-6Na" id="BdA-2c-Vfp"/>
                 <outlet property="profilePic" destination="30K-25-pua" id="Ubo-Z3-7mX"/>
-                <outlet property="scrollView" destination="WfF-Xl-WHm" id="MMg-bR-9lq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -140,7 +139,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQL-bk-0ml">
-                                                    <rect key="frame" x="0.0" y="60.5" width="375" height="1"/>
+                                                    <rect key="frame" x="0.0" y="60.5" width="320" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="IcF-wU-0Qz"/>
@@ -181,7 +180,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXi-c0-cmT">
-                                                    <rect key="frame" x="0.0" y="122" width="375" height="1"/>
+                                                    <rect key="frame" x="0.0" y="122" width="320" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="klK-Fi-1ib"/>

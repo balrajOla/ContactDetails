@@ -16,8 +16,6 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet weak var mobileNumber: UILabel!
     @IBOutlet weak var grdientView: GradientView!
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    
     let viewModel: ContactDetailsViewModel
     
     init(withViewModel vm: ContactDetailsViewModel) {
