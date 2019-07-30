@@ -14,6 +14,7 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var emailID: UILabel!
     @IBOutlet weak var mobileNumber: UILabel!
+    @IBOutlet weak var grdientView: GradientView!
     
     let viewModel: ContactDetailsViewModel
     
@@ -24,6 +25,12 @@ class ContactDetailViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        grdientView.setNeedsDisplay()
     }
     
     override func viewDidLoad() {
