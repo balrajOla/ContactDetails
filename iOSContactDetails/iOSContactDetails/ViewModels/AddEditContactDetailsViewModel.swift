@@ -23,14 +23,17 @@ enum AddEditContactDetailsViewModelError: Error {
 class AddEditContactDetailsViewModel {
     fileprivate var contactDetails: ContactDetails?
     let saveDetails: ((_ details: ContactDetails) -> Promise<SavedContactDetails>)
+    let title: String
     
     init(contactDetails: SavedContactDetails, usecase: ContactDetailUsecaseProtocol) {
         self.contactDetails = contactDetails.details
         self.saveDetails = contactDetails.id |> String.init |> usecase.addOrUpdateContactDetail(forID:)
+        self.title = "Edit Contact Details"
     }
     
     init(usecase: ContactDetailUsecaseProtocol) {
         self.saveDetails = usecase.addOrUpdateContactDetail(forID: nil)
+        self.title = "Add New Contact"
     }
     
     func saveContactDetails() -> Promise<String> {
@@ -103,6 +106,10 @@ extension AddEditContactDetailsViewModel {
     
     func profilePic() -> URL? {
         return contactDetails?.name.profilePic.flatMap { URL(string: $0) }
+    }
+    
+    func getTitle() -> String {
+        return self.title
     }
     
     /*

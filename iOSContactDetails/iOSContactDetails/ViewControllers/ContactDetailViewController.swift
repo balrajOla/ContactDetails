@@ -36,6 +36,7 @@ class ContactDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Details"
         self.addRightNavigationBarItems()
     }
     

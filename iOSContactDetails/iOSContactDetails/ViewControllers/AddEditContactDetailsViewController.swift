@@ -40,6 +40,7 @@ class AddEditContactDetailsViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         gradientView.setNeedsDisplay()
+        self.title = self.viewModel.getTitle()
     }
     
     private func addNavigationBarItems() {
