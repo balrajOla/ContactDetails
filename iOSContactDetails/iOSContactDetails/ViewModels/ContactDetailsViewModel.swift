@@ -47,4 +47,8 @@ class ContactDetailsViewModel {
     func profilePic() -> URL? {
         return contactDetails.details.name.profilePic.flatMap { URL(string: $0) }
     }
+    
+    func getAddEditContactDetailViewModel() -> AddEditContactDetailsViewModel {
+        return AddEditContactDetailsViewModel(contactDetails: self.contactDetails, usecase: ContactDetailUsecase())
+    }
 }

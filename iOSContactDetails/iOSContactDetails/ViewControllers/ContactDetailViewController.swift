@@ -35,8 +35,13 @@ class ContactDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.addRightNavigationBarItems()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         self.bindData()
         Loader.show(blockingLoader: false)
         self.viewModel.loadContactDetails()
@@ -49,7 +54,18 @@ class ContactDetailViewController: UIViewController {
         }
     }
 
-    func bindData() {
+    private func addRightNavigationBarItems() {
+        self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editContactDetail)), animated: true)
+    }
+    
+    @objc private func editContactDetail() {
+        self.viewModel.getAddEditContactDetailViewModel()
+            |> AddEditContactDetailsViewController.init(withViewModel:)
+            >>> {[weak self] (vc: AddEditContactDetailsViewController)  -> Void in
+                self?.navigationController?.pushViewController(vc, animated: true) }
+    }
+    
+    private func bindData() {
         // set profile pic
         if let imageUrl = viewModel.profilePic() {
             self.profilePic.af_setImage(withURL: imageUrl, placeholderImage: UIImage(imageLiteralResourceName: "profileDefaultPic"))

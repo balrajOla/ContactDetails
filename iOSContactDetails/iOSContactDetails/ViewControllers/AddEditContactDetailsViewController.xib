@@ -12,7 +12,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEditContactDetailsViewController" customModule="iOSContactDetails" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextView" destination="6Uo-Fn-XHc" id="05x-Rq-tq1"/>
+                <outlet property="firstNameTextView" destination="Mia-W9-AgO" id="Pm1-Hr-181"/>
                 <outlet property="gradientView" destination="1kN-MN-XtG" id="iwK-Zy-IUZ"/>
+                <outlet property="lastNametextView" destination="rw3-iY-Osj" id="WmG-d7-wfP"/>
+                <outlet property="mobileTextView" destination="93K-lP-hAW" id="8Hz-lv-M5q"/>
+                <outlet property="profilePicImageView" destination="oBh-37-sim" id="aZ3-FU-5m5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

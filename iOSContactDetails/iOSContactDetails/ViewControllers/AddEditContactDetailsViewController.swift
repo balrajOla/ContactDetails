@@ -9,7 +9,12 @@
 import UIKit
 
 class AddEditContactDetailsViewController: UIViewController {
-
+    @IBOutlet weak var firstNameTextView: UITextField!
+    @IBOutlet weak var lastNametextView: UITextField!
+    @IBOutlet weak var mobileTextView: UITextField!
+    @IBOutlet weak var emailTextView: UITextField!
+    @IBOutlet weak var profilePicImageView: UIImageView!
+    
     @IBOutlet weak var gradientView: GradientView!
     let viewModel: AddEditContactDetailsViewModel
     
@@ -27,6 +32,7 @@ class AddEditContactDetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.addNavigationBarItems()
+        self.bindData()
     }
 
     override func viewDidLayoutSubviews() {
@@ -38,6 +44,13 @@ class AddEditContactDetailsViewController: UIViewController {
     private func addNavigationBarItems() {
         self.navigationItem.setLeftBarButton(UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelContactDetail)), animated: true)
         self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(addContactDetail)), animated: true)
+    }
+    
+    private func bindData() {
+        self.firstNameTextView.text = self.viewModel.getFirstName()
+        self.lastNametextView.text = self.viewModel.getLastName()
+        self.emailTextView.text = self.viewModel.getEmailID()
+        self.mobileTextView.text = self.viewModel.getPhoneNumber()
     }
     
     @objc private func addContactDetail() {
