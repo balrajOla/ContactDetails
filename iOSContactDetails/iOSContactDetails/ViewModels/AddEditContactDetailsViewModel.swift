@@ -28,12 +28,12 @@ class AddEditContactDetailsViewModel {
     init(contactDetails: SavedContactDetails, usecase: ContactDetailUsecaseProtocol) {
         self.contactDetails = contactDetails.details
         self.saveDetails = contactDetails.id |> String.init |> usecase.addOrUpdateContactDetail(forID:)
-        self.title = "Edit Contact Details"
+        self.title = "Edit Details"
     }
     
     init(usecase: ContactDetailUsecaseProtocol) {
         self.saveDetails = usecase.addOrUpdateContactDetail(forID: nil)
-        self.title = "Add New Contact"
+        self.title = "Add Details"
     }
     
     func saveContactDetails() -> Promise<String> {
