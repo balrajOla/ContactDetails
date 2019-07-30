@@ -10,21 +10,68 @@ import UIKit
 
 class AddEditContactDetailsViewController: UIViewController {
 
+    @IBOutlet weak var gradientView: GradientView!
+    let viewModel: AddEditContactDetailsViewModel
+    
+    init(withViewModel vm: AddEditContactDetailsViewModel) {
+        self.viewModel = vm
+        super.init(nibName: String.stringFromClass(AddEditContactDetailsViewController.self), bundle: Bundle.main)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.addNavigationBarItems()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        gradientView.setNeedsDisplay()
     }
-    */
-
+    
+    private func addNavigationBarItems() {
+        self.navigationItem.setLeftBarButton(UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelContactDetail)), animated: true)
+        self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(addContactDetail)), animated: true)
+    }
+    
+    @objc private func addContactDetail() {
+        Loader.show(blockingLoader: true)
+       self.viewModel.saveContactDetails()
+        .done(on: DispatchQueue.main) { value in
+            self.showToast(message: value)
+            self.cancelContactDetail()
+        }
+        .catch { error in
+            self.showToast(message: error.localizedDescription) }
+        .finally(on: DispatchQueue.main) {
+            Loader.hide()
+        }
+    }
+    
+    @objc private func cancelContactDetail() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    //MARK: Text did change
+    @IBAction func firstNameTextChanged(_ sender: UITextField) {
+        (sender.text ?? "") |> self.viewModel.setFirstName(name:)
+    }
+    
+    @IBAction func lastNameTextChange(_ sender: UITextField) {
+        (sender.text ?? "") |> self.viewModel.setLastName(name:)
+    }
+    
+    @IBAction func mobileTextChange(_ sender: UITextField) {
+        (sender.text ?? "") |> self.viewModel.setPhoneNumber(number:)
+    }
+    
+    @IBAction func emailTextChange(_ sender: UITextField) {
+        (sender.text ?? "") |> self.viewModel.setEmailID(email:)
+    }
 }

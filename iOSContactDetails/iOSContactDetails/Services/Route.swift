@@ -28,25 +28,34 @@ internal enum Route {
         }
     }
     
-    static func absoluteURL(serverConfig: ServerConfigType)
+    static func httpRequest(serverConfig: ServerConfigType)
         -> (_ route: Route)
-        -> URL? {
-            return { (_ route: Route) -> URL? in
+        -> URLRequest? {
+            return { (_ route: Route) -> URLRequest? in
                 let absoluteURL = (route.requestProperties.path.lowercased().contains("https") || route.requestProperties.path.lowercased().contains("http")) ? route.requestProperties.path : serverConfig.apiBaseUrl.appendingPathComponent(route.requestProperties.path).absoluteString
                 var url = URLComponents(string: absoluteURL)
                 
-                url?.queryItems = route.requestProperties.query.map { (item: (key: String, value: Any)) -> URLQueryItem in
-                    URLQueryItem(name: item.0, value: (item.1 as? String))
+                if route.requestProperties.method == .get {
+                    url?.queryItems = route.requestProperties.query.map { (item: (key: String, value: Any)) -> URLQueryItem in
+                        URLQueryItem(name: item.0, value: (item.1 as? String))
+                    }
                 }
                 
-                return url?.url
+                return url?.url.map {
+                    var request = URLRequest(url: $0)
+                    request.httpMethod = route.requestProperties.method.rawValue
+                    request.httpBody = (route.requestProperties.query.count > 0) ? try? JSONSerialization.data(withJSONObject: route.requestProperties.query, options: .prettyPrinted) : nil
+                    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+                    return request
+                }
             }
     }
 }
 
 enum HTTPMethod: String {
-    case get
-    case post
-    case put
-    case delete
+    case get = "GET"
+    case post = "POST"
+    case put = "PUT"
+    case delete = "DELETE"
 }

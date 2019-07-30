@@ -41,4 +41,8 @@ extension ContactListViewModel {
             }
         }
     }
+    
+    func getAddEditContactDetailViewModel() -> AddEditContactDetailsViewModel {
+        return AddEditContactDetailsViewModel(usecase: ContactDetailUsecase())
+    }
 }

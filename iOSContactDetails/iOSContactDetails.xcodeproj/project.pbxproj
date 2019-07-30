@@ -13,6 +13,7 @@
 		A274460922F00128003B12E6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460822F00128003B12E6 /* Validation.swift */; };
 		A274460C22F02101003B12E6 /* AddEditContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460A22F02101003B12E6 /* AddEditContactDetailsViewController.swift */; };
 		A274460D22F02101003B12E6 /* AddEditContactDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A274460B22F02101003B12E6 /* AddEditContactDetailsViewController.xib */; };
+		A274460F22F05A09003B12E6 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460E22F05A09003B12E6 /* UIViewController+Toast.swift */; };
 		A2989AA722EB17A10069EFF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AA622EB17A10069EFF0 /* AppDelegate.swift */; };
 		A2989AAE22EB17A70069EFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2989AAD22EB17A70069EFF0 /* Assets.xcassets */; };
 		A2989ABA22EB17FE0069EFF0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */; };
@@ -56,6 +57,7 @@
 		A274460822F00128003B12E6 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		A274460A22F02101003B12E6 /* AddEditContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditContactDetailsViewController.swift; sourceTree = "<group>"; };
 		A274460B22F02101003B12E6 /* AddEditContactDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEditContactDetailsViewController.xib; sourceTree = "<group>"; };
+		A274460E22F05A09003B12E6 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		A2989AA322EB17A10069EFF0 /* iOSContactDetails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSContactDetails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2989AA622EB17A10069EFF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2989AAD22EB17A70069EFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				A2989AFB22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift */,
+				A274460E22F05A09003B12E6 /* UIViewController+Toast.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				A274460922F00128003B12E6 /* Validation.swift in Sources */,
 				A2989ADA22ED86EE0069EFF0 /* ContactDetail.swift in Sources */,
 				A2989AE422EE17F10069EFF0 /* ContactListViewModel.swift in Sources */,
+				A274460F22F05A09003B12E6 /* UIViewController+Toast.swift in Sources */,
 				A2989ADF22EE05060069EFF0 /* ContactsUsecase.swift in Sources */,
 				A2989ACD22EC8FC00069EFF0 /* Encoder+Dictionary.swift in Sources */,
 				A2989AF222EE2C1C0069EFF0 /* Loader.swift in Sources */,

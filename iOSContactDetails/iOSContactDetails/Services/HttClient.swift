@@ -20,11 +20,11 @@ protocol HttpClientProtocol {
 }
 
 struct HttClient: HttpClientProtocol {
-    public let serverConfig: (_ route: Route) -> URL?
+    public let serverConfig: (_ route: Route) -> URLRequest?
     private let session: URLSession
     
     public init(serverConfig: ServerConfigType = ServerConfig.production) {
-        self.serverConfig = Route.absoluteURL(serverConfig: serverConfig)
+        self.serverConfig = Route.httpRequest(serverConfig: serverConfig)
         
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForResource = 300

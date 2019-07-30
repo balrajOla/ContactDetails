@@ -33,7 +33,7 @@ class AddEditContactDetailsViewModel {
         self.saveDetails = usecase.addOrUpdateContactDetail(forID: nil)
     }
     
-    func saveContactDetails() -> Promise<Bool> {
+    func saveContactDetails() -> Promise<String> {
        return (contactDetails |> validate(contactDetail:))
         .flatMap {[weak self] detail -> Promise<SavedContactDetails>? in
             guard let self = self else {
@@ -42,7 +42,8 @@ class AddEditContactDetailsViewModel {
             
         return detail
                 |> self.saveDetails
-            }?.map { _ in return true } ?? Promise<Bool>(error: AddEditContactDetailsViewModelError.emptyContactDetail)
+        }?.map {[weak self] _ in
+            return self?.contactDetails.map { "Contact details for \($0.name.firstName) \($0.name.lastName) has been saved!!!"} ?? "Contact details had been saved!!!" } ?? Promise<String>(error: AddEditContactDetailsViewModelError.emptyContactDetail)
     }
 }
 
@@ -66,19 +67,19 @@ extension AddEditContactDetailsViewModel {
     }
     
     func validate(firstName: String?) -> ValidationResult<String> {
-        return required(firstName) >>= minLength(1)
+        return required(firstName) >>= minLength(2)
     }
     
     func validate(lastName: String?) -> ValidationResult<String> {
-        return required(lastName) >>= minLength(1)
+        return required(lastName) >>= minLength(2)
     }
     
     func validate(emailID: String?) -> ValidationResult<String> {
-        return (required(emailID) >>= minLength(1)) >>= validEmail
+        return (required(emailID) >>= minLength(1)) 
     }
     
     func validate(phoneNumber: String?) -> ValidationResult<String> {
-        return (required(phoneNumber) >>= minLength(1)) >>= validPhoneNumber
+        return (required(phoneNumber) >>= minLength(1))
     }
 }
 
