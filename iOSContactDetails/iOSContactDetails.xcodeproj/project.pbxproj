@@ -11,6 +11,8 @@
 		A274460522EEF728003B12E6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460422EEF728003B12E6 /* GradientView.swift */; };
 		A274460722EF42F7003B12E6 /* AddEditContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460622EF42F7003B12E6 /* AddEditContactDetailsViewModel.swift */; };
 		A274460922F00128003B12E6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460822F00128003B12E6 /* Validation.swift */; };
+		A274460C22F02101003B12E6 /* AddEditContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460A22F02101003B12E6 /* AddEditContactDetailsViewController.swift */; };
+		A274460D22F02101003B12E6 /* AddEditContactDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A274460B22F02101003B12E6 /* AddEditContactDetailsViewController.xib */; };
 		A2989AA722EB17A10069EFF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AA622EB17A10069EFF0 /* AppDelegate.swift */; };
 		A2989AAE22EB17A70069EFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2989AAD22EB17A70069EFF0 /* Assets.xcassets */; };
 		A2989ABA22EB17FE0069EFF0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2989AB822EB17FE0069EFF0 /* HomeScreenViewController.swift */; };
@@ -52,6 +54,8 @@
 		A274460422EEF728003B12E6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A274460622EF42F7003B12E6 /* AddEditContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditContactDetailsViewModel.swift; sourceTree = "<group>"; };
 		A274460822F00128003B12E6 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		A274460A22F02101003B12E6 /* AddEditContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditContactDetailsViewController.swift; sourceTree = "<group>"; };
+		A274460B22F02101003B12E6 /* AddEditContactDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEditContactDetailsViewController.xib; sourceTree = "<group>"; };
 		A2989AA322EB17A10069EFF0 /* iOSContactDetails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSContactDetails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2989AA622EB17A10069EFF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2989AAD22EB17A70069EFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -241,6 +245,8 @@
 				A2989AB922EB17FE0069EFF0 /* HomeScreenViewController.xib */,
 				A2989AFD22EE51900069EFF0 /* ContactDetailViewController.swift */,
 				A2989AFE22EE51900069EFF0 /* ContactDetailViewController.xib */,
+				A274460A22F02101003B12E6 /* AddEditContactDetailsViewController.swift */,
+				A274460B22F02101003B12E6 /* AddEditContactDetailsViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 				A2989ABD22EB191D0069EFF0 /* Podfile in Resources */,
 				A2989ABB22EB17FE0069EFF0 /* HomeScreenViewController.xib in Resources */,
 				A2989B0022EE51900069EFF0 /* ContactDetailViewController.xib in Resources */,
+				A274460D22F02101003B12E6 /* AddEditContactDetailsViewController.xib in Resources */,
 				A2989AAE22EB17A70069EFF0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +372,7 @@
 				A2989AF622EE2D550069EFF0 /* ContactListTableViewCell.swift in Sources */,
 				A2989AA722EB17A10069EFF0 /* AppDelegate.swift in Sources */,
 				A2989AD122EC9F020069EFF0 /* ContactInfoTypes.swift in Sources */,
+				A274460C22F02101003B12E6 /* AddEditContactDetailsViewController.swift in Sources */,
 				A2989AFC22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift in Sources */,
 				A2989AC222EB36E10069EFF0 /* Route.swift in Sources */,
 				A2989AF022EE2C080069EFF0 /* PulseAnimationView.swift in Sources */,

@@ -16,6 +16,8 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet weak var mobileNumber: UILabel!
     @IBOutlet weak var grdientView: GradientView!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     let viewModel: ContactDetailsViewModel
     
     init(withViewModel vm: ContactDetailsViewModel) {
@@ -64,16 +66,4 @@ class ContactDetailViewController: UIViewController {
         self.mobileNumber.text = self.viewModel.getMobileNumber()
         self.emailID.text = self.viewModel.getEmailID()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
