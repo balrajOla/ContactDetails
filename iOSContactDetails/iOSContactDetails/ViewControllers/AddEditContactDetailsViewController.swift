@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class AddEditContactDetailsViewController: UIViewController {
     @IBOutlet weak var firstNameTextView: UITextField!
@@ -51,6 +52,13 @@ class AddEditContactDetailsViewController: UIViewController {
         self.lastNametextView.text = self.viewModel.getLastName()
         self.emailTextView.text = self.viewModel.getEmailID()
         self.mobileTextView.text = self.viewModel.getPhoneNumber()
+        
+        // set profile pic
+        if let imageUrl = viewModel.profilePic() {
+            self.profilePicImageView.af_setImage(withURL: imageUrl, placeholderImage: UIImage(imageLiteralResourceName: "profileDefaultPic"))
+        } else {
+            self.profilePicImageView.image = UIImage(imageLiteralResourceName: "profileDefaultPic")
+        }
     }
     
     @objc private func addContactDetail() {
