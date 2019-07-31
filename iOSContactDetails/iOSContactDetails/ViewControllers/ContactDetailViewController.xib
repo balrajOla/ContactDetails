@@ -57,20 +57,32 @@
                                             <rect key="frame" x="8" y="221" width="359" height="50"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwo-Yh-dg8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
+                                                    <state key="normal" title="Message"/>
+                                                    <connections>
+                                                        <action selector="clickedMessage:" destination="-1" eventType="touchUpInside" id="80F-cb-mty"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUK-0t-jE0">
-                                                    <rect key="frame" x="90" y="0.0" width="89.5" height="30"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <rect key="frame" x="121" y="0.0" width="58.5" height="30"/>
+                                                    <state key="normal" title="Call"/>
+                                                    <connections>
+                                                        <action selector="clickedCall:" destination="-1" eventType="touchUpInside" id="ywS-wa-gli"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uv-vP-SyA">
-                                                    <rect key="frame" x="179.5" y="0.0" width="90" height="30"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <rect key="frame" x="179.5" y="0.0" width="72" height="30"/>
+                                                    <state key="normal" title="Email"/>
+                                                    <connections>
+                                                        <action selector="clickedEmail:" destination="-1" eventType="touchUpInside" id="MMb-5X-klP"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaB-eD-jKL">
-                                                    <rect key="frame" x="269.5" y="0.0" width="89.5" height="30"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <rect key="frame" x="251.5" y="0.0" width="107.5" height="30"/>
+                                                    <state key="normal" title="Favorite"/>
+                                                    <connections>
+                                                        <action selector="toggleFav:" destination="-1" eventType="touchUpInside" id="bSH-s9-Xjx"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

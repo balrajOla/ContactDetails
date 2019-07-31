@@ -10,6 +10,7 @@
 		90083EB1B45AC5482997EB29 /* libPods-iOSContactDetails.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089ADA3A34BCFA22B707A3A1 /* libPods-iOSContactDetails.a */; };
 		A246691422F14E59009BE7D7 /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246691322F14E59009BE7D7 /* KeyboardAvoiding.swift */; };
 		A246691622F14ECC009BE7D7 /* AddEditContactDetailsViewController+TextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246691522F14ECC009BE7D7 /* AddEditContactDetailsViewController+TextViewDelegate.swift */; };
+		A246691822F15854009BE7D7 /* ContactDetailViewController+MessageUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246691722F15854009BE7D7 /* ContactDetailViewController+MessageUI.swift */; };
 		A274460522EEF728003B12E6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460422EEF728003B12E6 /* GradientView.swift */; };
 		A274460722EF42F7003B12E6 /* AddEditContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460622EF42F7003B12E6 /* AddEditContactDetailsViewModel.swift */; };
 		A274460922F00128003B12E6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274460822F00128003B12E6 /* Validation.swift */; };
@@ -56,6 +57,7 @@
 		84C56F0E04B0F444EA5311CD /* Pods-iOSContactDetails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSContactDetails.release.xcconfig"; path = "Target Support Files/Pods-iOSContactDetails/Pods-iOSContactDetails.release.xcconfig"; sourceTree = "<group>"; };
 		A246691322F14E59009BE7D7 /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoiding.swift; sourceTree = "<group>"; };
 		A246691522F14ECC009BE7D7 /* AddEditContactDetailsViewController+TextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddEditContactDetailsViewController+TextViewDelegate.swift"; sourceTree = "<group>"; };
+		A246691722F15854009BE7D7 /* ContactDetailViewController+MessageUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailViewController+MessageUI.swift"; sourceTree = "<group>"; };
 		A274460422EEF728003B12E6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A274460622EF42F7003B12E6 /* AddEditContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditContactDetailsViewModel.swift; sourceTree = "<group>"; };
 		A274460822F00128003B12E6 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				A2989AFB22EE3A020069EFF0 /* HomeScreenViewController+TableView.swift */,
 				A274460E22F05A09003B12E6 /* UIViewController+Toast.swift */,
 				A246691522F14ECC009BE7D7 /* AddEditContactDetailsViewController+TextViewDelegate.swift */,
+				A246691722F15854009BE7D7 /* ContactDetailViewController+MessageUI.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				A2989AF022EE2C080069EFF0 /* PulseAnimationView.swift in Sources */,
 				A2989AC022EB36B10069EFF0 /* HttClient.swift in Sources */,
 				A274460722EF42F7003B12E6 /* AddEditContactDetailsViewModel.swift in Sources */,
+				A246691822F15854009BE7D7 /* ContactDetailViewController+MessageUI.swift in Sources */,
 				A2989AE122EE0CFE0069EFF0 /* ContactDetailUsecase.swift in Sources */,
 				A2989AEB22EE23C80069EFF0 /* ContactCellViewModel.swift in Sources */,
 				A2989AFF22EE51900069EFF0 /* ContactDetailViewController.swift in Sources */,

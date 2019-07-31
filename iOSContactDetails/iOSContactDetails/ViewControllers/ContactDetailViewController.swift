@@ -54,7 +54,20 @@ class ContactDetailViewController: UIViewController {
                 Loader.hide()
         }
     }
-
+    
+    @IBAction func clickedMessage(_ sender: Any) {
+        self.displayMessageInterface()
+    }
+    
+    @IBAction func clickedCall(_ sender: Any) {
+    }
+    
+    @IBAction func clickedEmail(_ sender: Any) {
+    }
+    
+    @IBAction func toggleFav(_ sender: Any) {
+    }
+    
     private func addRightNavigationBarItems() {
         self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editContactDetail)), animated: true)
     }

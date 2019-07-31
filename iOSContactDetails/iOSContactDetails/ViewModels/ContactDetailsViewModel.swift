@@ -51,4 +51,12 @@ class ContactDetailsViewModel {
     func getAddEditContactDetailViewModel() -> AddEditContactDetailsViewModel {
         return AddEditContactDetailsViewModel(contactDetails: self.contactDetails, usecase: ContactDetailUsecase())
     }
+    
+    func isMobileNumberEmpty() -> Bool {
+        return contactDetails.details.contactInfo?.getPhoneNumber()?.isEmpty ?? true
+    }
+    
+    func isEmailIDEmpty() -> Bool {
+        return contactDetails.details.contactInfo?.getEmailID()?.isEmpty ?? true
+    }
 }
