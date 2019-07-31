@@ -56,16 +56,23 @@ class ContactDetailViewController: UIViewController {
     }
     
     @IBAction func clickedMessage(_ sender: Any) {
-        self.displayMessageInterface()
+        if !self.viewModel.isMobileNumberEmpty() {
+            _ = (self.viewModel.getMobileNumber() |> self.sendMessage(to:))(nil)
+        } else { self.showToast(message: "Please add mobile number") }
     }
     
     @IBAction func clickedCall(_ sender: Any) {
         if !self.viewModel.isMobileNumberEmpty() {
-            self.viewModel.getMobileNumber() |> call(mobNumber:)
-        } else { self.showToast(message: "Please add mobile number before making a call") }
+            if !(self.viewModel.getMobileNumber() |> call(mobNumber:)) {
+                self.showToast(message: "Calling facility is disabled on this device")
+            }
+        } else { self.showToast(message: "Please add mobile number") }
     }
     
     @IBAction func clickedEmail(_ sender: Any) {
+        if !self.viewModel.isEmailIDEmpty() {
+          _ = (self.viewModel.getEmailID() |> sendEmail(to:))(nil)
+        } else { self.showToast(message: "Please add email id") }
     }
     
     @IBAction func toggleFav(_ sender: Any) {

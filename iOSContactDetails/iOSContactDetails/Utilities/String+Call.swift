@@ -35,13 +35,16 @@ extension String {
     }
 }
 
-func call(mobNumber: String) {
+func call(mobNumber: String) -> Bool {
     guard   let number = mobNumber.to(type: .phoneNumber),
         let url = URL(string: "tel://\(number.onlyDigits())"),
-        UIApplication.shared.canOpenURL(url) else { return }
+        UIApplication.shared.canOpenURL(url) else {
+            return false }
     if #available(iOS 10, *) {
         UIApplication.shared.open(url)
     } else {
         UIApplication.shared.openURL(url)
     }
+    
+    return true
 }
