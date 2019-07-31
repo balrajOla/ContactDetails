@@ -28,7 +28,9 @@ class HomeScreenViewController: UIViewController {
         if self.viewModel.hasNoData() { Loader.show(blockingLoader: false) }
         self.viewModel.loadContacts()
             .done(on: DispatchQueue.main) { _ in self.tableView.reloadData() }
-            .catch { err in print(err.localizedDescription) }
+            .catch { err in
+                self.showToast(message: "Something went wrong please try again")
+                print(err.localizedDescription) }
             .finally(on: DispatchQueue.main) {
                 Loader.hide()
         }

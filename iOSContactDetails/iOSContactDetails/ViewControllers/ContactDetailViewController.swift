@@ -48,6 +48,7 @@ class ContactDetailViewController: UIViewController {
         self.viewModel.loadContactDetails()
             .done(on: DispatchQueue.main) { _ in self.bindData() }
             .catch { err in
+                self.showToast(message: "Something went wrong please try again")
                 print(err)
             }
             .finally(on: DispatchQueue.main) {
@@ -83,6 +84,7 @@ class ContactDetailViewController: UIViewController {
                 
                 self.bindData() }
             .catch { err in
+                self.showToast(message: "Something went wrong please try again")
                 print(err)
             }
             .finally(on: DispatchQueue.main) {

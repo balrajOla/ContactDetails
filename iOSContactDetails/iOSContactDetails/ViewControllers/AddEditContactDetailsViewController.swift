@@ -71,7 +71,8 @@ class AddEditContactDetailsViewController: UIViewController {
             self.cancelContactDetail()
         }
         .catch { error in
-            self.showToast(message: error.localizedDescription) }
+            self.showToast(message: "Something went wrong please try again")
+            print(error) }
         .finally(on: DispatchQueue.main) {
             Loader.hide()
         }
