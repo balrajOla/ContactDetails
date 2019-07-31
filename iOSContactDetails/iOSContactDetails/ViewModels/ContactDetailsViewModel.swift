@@ -63,6 +63,10 @@ class ContactDetailsViewModel {
         return AddEditContactDetailsViewModel(contactDetails: self.contactDetails, usecase: ContactDetailUsecase())
     }
     
+    func getFavStatus() -> Bool {
+        return self.contactDetails.details.isFav
+    }
+    
     func isMobileNumberEmpty() -> Bool {
         return contactDetails.details.contactInfo?.getPhoneNumber()?.isEmpty ?? true
     }

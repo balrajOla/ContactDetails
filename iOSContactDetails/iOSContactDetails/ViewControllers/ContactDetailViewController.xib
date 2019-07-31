@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactDetailViewController" customModule="iOSContactDetails" customModuleProvider="target">
             <connections>
                 <outlet property="emailID" destination="hU0-vv-4Ks" id="bNl-Ye-TEb"/>
+                <outlet property="favorite" destination="CaB-eD-jKL" id="Em8-eF-vjO"/>
                 <outlet property="grdientView" destination="sU1-2N-8NI" id="0yk-9k-zjB"/>
                 <outlet property="mobileNumber" destination="Hkl-n3-nhN" id="S06-s2-M5F"/>
                 <outlet property="name" destination="VAf-mH-6Na" id="BdA-2c-Vfp"/>

@@ -15,6 +15,7 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet weak var emailID: UILabel!
     @IBOutlet weak var mobileNumber: UILabel!
     @IBOutlet weak var grdientView: GradientView!
+    @IBOutlet weak var favorite: UIButton!
     
     let viewModel: ContactDetailsViewModel
     
@@ -117,5 +118,8 @@ class ContactDetailViewController: UIViewController {
         //set emailID and phone number
         self.mobileNumber.text = self.viewModel.getMobileNumber()
         self.emailID.text = self.viewModel.getEmailID()
+        
+        // set fav btn text
+        self.favorite.setTitle(self.viewModel.getFavStatus() ? "Favourite" : "Unfavourite", for: .normal)
     }
 }
