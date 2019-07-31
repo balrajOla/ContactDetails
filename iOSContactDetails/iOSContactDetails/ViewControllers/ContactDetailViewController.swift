@@ -60,6 +60,9 @@ class ContactDetailViewController: UIViewController {
     }
     
     @IBAction func clickedCall(_ sender: Any) {
+        if !self.viewModel.isMobileNumberEmpty() {
+            self.viewModel.getMobileNumber() |> call(mobNumber:)
+        } else { self.showToast(message: "Please add mobile number before making a call") }
     }
     
     @IBAction func clickedEmail(_ sender: Any) {
