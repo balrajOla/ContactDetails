@@ -16,3 +16,8 @@ target 'iOSContactDetails' do
   project 'iOSContactDetails/iOSContactDetails.xcodeproj'
   base_pod
 end
+
+target 'iOSContactDetailsUnitTests' do
+  project 'iOSContactDetails/iOSContactDetails.xcodeproj'
+  base_pod
+end
