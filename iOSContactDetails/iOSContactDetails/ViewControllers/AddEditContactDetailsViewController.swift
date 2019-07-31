@@ -71,7 +71,12 @@ class AddEditContactDetailsViewController: UIViewController {
             self.cancelContactDetail()
         }
         .catch { error in
-            self.showToast(message: "Something went wrong please try again")
+            if let _ = error as? AddEditContactDetailsViewModelError {
+                self.showToast(message: "Enter all the fields properly")
+            } else {
+                self.showToast(message: "Something went wrong please try again")
+            }
+            
             print(error) }
         .finally(on: DispatchQueue.main) {
             Loader.hide()
