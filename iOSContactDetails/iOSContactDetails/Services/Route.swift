@@ -44,7 +44,7 @@ internal enum Route {
                 return url?.url.map {
                     var request = URLRequest(url: $0)
                     request.httpMethod = route.requestProperties.method.rawValue
-                    request.httpBody = (route.requestProperties.query.count > 0) ? try? JSONSerialization.data(withJSONObject: route.requestProperties.query, options: .prettyPrinted) : nil
+                    request.httpBody = ((route.requestProperties.query.count > 0) && route.requestProperties.method != .get) ? try? JSONSerialization.data(withJSONObject: route.requestProperties.query, options: .prettyPrinted) : nil
                     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
                     return request
