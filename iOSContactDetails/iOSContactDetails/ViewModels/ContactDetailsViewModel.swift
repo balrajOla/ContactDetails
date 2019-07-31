@@ -32,6 +32,17 @@ class ContactDetailsViewModel {
             }) }
     }
     
+    func toggleIsFav() -> Promise<Bool> {
+    return (!self.contactDetails.details.isFav
+            |> self.setIsFav(value:)
+            |> { $0.details }
+            |> (self.contactDetails.id |> String.init |> self.usecase.addOrUpdateContactDetail(forID:)))
+            .map({[weak self] (res: SavedContactDetails) -> Bool in
+                self?.contactDetails = res
+                return res.details.isFav
+            })
+    }
+    
     func getFullName() -> String {
         return "\(contactDetails.details.name.firstName) \(contactDetails.details.name.lastName)"
     }
@@ -58,5 +69,13 @@ class ContactDetailsViewModel {
     
     func isEmailIDEmpty() -> Bool {
         return contactDetails.details.contactInfo?.getEmailID()?.isEmpty ?? true
+    }
+    
+    func setIsFav(value: Bool) -> SavedContactDetails {
+        self.contactDetails = SavedContactDetails(id: self.contactDetails.id,
+                                                  details: ContactDetails(name: self.contactDetails.details.name,
+                                                                          contactInfo: self.contactDetails.details.contactInfo,
+                                                                          isFav: value))
+        return self.contactDetails
     }
 }

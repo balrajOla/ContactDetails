@@ -76,6 +76,18 @@ class ContactDetailViewController: UIViewController {
     }
     
     @IBAction func toggleFav(_ sender: Any) {
+        Loader.show(blockingLoader: false)
+        self.viewModel.toggleIsFav()
+            .done(on: DispatchQueue.main) { isFav in
+                self.showToast(message: isFav ? "This contact is added to your favorite" : "This contact is removed from your contact")
+                
+                self.bindData() }
+            .catch { err in
+                print(err)
+            }
+            .finally(on: DispatchQueue.main) {
+                Loader.hide()
+        }
     }
     
     private func addRightNavigationBarItems() {
