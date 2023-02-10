@@ -1,0 +1,6 @@
+module Pods_iOSContactDetails {
+  umbrella header "Pods-iOSContactDetails-umbrella.h"
+
+  export *
+  module * { export * }
+}
